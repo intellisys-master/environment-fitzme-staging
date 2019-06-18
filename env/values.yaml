@@ -5,6 +5,11 @@ cleanup:
     helm.sh/hook-delete-policy: hook-succeeded
   Args:
   - --cleanup
+controllerbuild:
+  enabled: true
+controllerworkflow:
+  enabled: false
+dockerRegistry: 294950379691.dkr.ecr.ap-northeast-2.amazonaws.com
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
@@ -22,4 +27,5 @@ jenkins:
       EnvVars:
         DOCKER_REGISTRY: 294950379691.dkr.ecr.ap-northeast-2.amazonaws.com
         TILLER_NAMESPACE: kube-system
+  enabled: false
 prow: {}
