@@ -10,6 +10,9 @@ dependencies:
 - name: fitzme-api
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.19
+- name: fitzme-salad
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.3
 - name: fitzme-salad-config
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.7
